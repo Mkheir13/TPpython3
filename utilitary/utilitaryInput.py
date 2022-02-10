@@ -3,9 +3,9 @@ def input_continue():
     print("\n\nVoulez-vous essayer un autre exercice ? (O / N)\n> ", end="")
     while True:
         test = input()
-        if test == "O":
+        if test == "O" or test == "o":
             return True
-        elif test == "N":
+        elif test == "N" or test == "n":
             return False
         else:
             print("Choisissez une réponse valide !")
