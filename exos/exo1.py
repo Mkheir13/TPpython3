@@ -3,11 +3,14 @@ from utilitary import *
 
 #
 def exo_1():
-    nbr_siriacus = input_positive_int("Entrez un nombre : ")
-    while nbr_siriacus != 1:
-        if (nbr_siriacus % 2) == 0:
-            nbr_siriacus = nbr_siriacus / 2
-            print(int(nbr_siriacus), end=" ")
+    nbr_syracus = input_positive_int("Entrez un nombre : ")
+    index = 0
+    print(f"n{index} = {int(nbr_syracus)}, ", end="")
+    while nbr_syracus != 1:
+        if (nbr_syracus % 2) == 0:
+            nbr_syracus = nbr_syracus / 2
+            print(f"n{index} = {int(nbr_syracus)}, ", end="")
         else:
-            nbr_siriacus = (nbr_siriacus * 3 + 1)
-            print(int(nbr_siriacus), end=" ")
+            nbr_syracus = (nbr_syracus * 3 + 1)
+            print(f"n{index} = {int(nbr_syracus)}, ", end="")
+        index += 1
