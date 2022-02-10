@@ -1,6 +1,5 @@
-# Programme TP n°2 - Ynov Aix - 2021/2022
-# Fait par Marthely Davy & Olivier Mistral
-# Dernières modifications apportées le 04/02/2022 - 21:20
+# Programme TP n°3 - Ynov Aix - 2021/2022
+# Fait par Kheir-eddine Mederreg & Olivier Mistral
 from menu import *
 
 
