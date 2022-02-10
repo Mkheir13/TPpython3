@@ -1,2 +1,4 @@
 # TPpython3
-TP Python3 avec Mistral Olivier
+TP Python3
+Mistral Olivier
+Kheir-eddine Mederreg
