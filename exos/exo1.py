@@ -14,3 +14,4 @@ def exo_1():
             nbr_syracus = (nbr_syracus * 3 + 1)
             print(f"n{index} = {int(nbr_syracus)}, ", end="")
         index += 1
+    print(f"{index+1} = 4, {index+2} = 2, {index+3} = 1, et ce jusqu'à l'infini... ")
