@@ -3,7 +3,7 @@ from utilitary import *
 import random
 
 
-# Algorithme qui permette de connaître ses chances de gagner au tiercé, quarté, quinté et autres impôts volontaires
+# Algorithme qui permet de simuler une partie du jeu des allumettes contre l'ordinateur
 def exo_2():
     print("\n\n\n\n======== Exercice 2 - Jeu des allumettes ========\n")
     nom_joueur = input("Entrer votre nom : ")
