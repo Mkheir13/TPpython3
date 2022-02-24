@@ -30,12 +30,6 @@ def menu():
                 exo_4()
             case 5:
                 exo_5()
-            case 6:
-                exo_6()
-            case 7:
-                exo_7()
-            case 8:
-                exo_8()
             case _:
                 print("Cet exercice n'est pas disponible...")
         if not input_continue():
