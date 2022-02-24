@@ -1,7 +1,7 @@
 from utilitary import *
 
 
-#Algorithme qui permet de calculer et d'afficher la suite de syracus 
+# Algorithme qui permet de calculer et d'afficher la suite de syracus
 def exo_1():
     print("\n\n\n\n======== Exercice 1 - Suite de Syracuse ========\n")
     nbr_syracus = input_positive_int("Entrez un nombre : ")
@@ -15,4 +15,4 @@ def exo_1():
             nbr_syracus = (nbr_syracus * 3 + 1)
             print(f"n{index} = {int(nbr_syracus)}, ", end="")
         index += 1
-    print(f"n{index+1} = 4, n{index+2} = 2, n{index+3} = 1, et ce jusqu'à l'infini... ")
+    print(f"n{index + 1} = 4, n{index + 2} = 2, n{index + 3} = 1, et ce jusqu'à l'infini... ")
