@@ -71,40 +71,6 @@ def input_positive_int_onethree(txt):
             print("Vous devez choisir un entier positif !")
     return test
 
-# Fonction pour choisir un entier positif entre 1 et 2
-def input_positive_int_onetwo(txt):
-    test: int
-    toReturn: int
-    while True:
-        print(txt, end="")
-        number: str = input()
-        try:
-            test = int(number)
-            if test < 1 or test > 2:
-                print("Vous devez choisir un entier positif entre 1 et 2!")
-                continue
-            break
-        except ValueError:
-            print("Vous devez choisir un entier positif !")
-    return test
-    
-# Fonction pour choisir un entier positif qui est 1
-def input_positive_int_one(txt):
-    test: int
-    toReturn: int
-    while True:
-        print(txt, end="")
-        number: str = input()
-        try:
-            test = int(number)
-            if test != 1:
-                print("Vous devez choisir un entier positif entre 1 et 2!")
-                continue
-            break
-        except ValueError:
-            print("Vous devez choisir un entier positif !")
-    return test
-
 # Fonction pour choisir un entier non nul
 def input_nonzero_int(txt):
     test: int
