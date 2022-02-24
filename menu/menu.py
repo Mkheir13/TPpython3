@@ -6,14 +6,11 @@ from utilitary import *
 def menu():
     while True:
         print("\n\nListe des exercices disponibles :\n")
-        print("Exercice 1 > Le plus grand")
-        print("Exercice 2 > Le Tiercé")
-        print("Exercice 3 > Equation second degré")
-        print("Exercice 4 > Programmer une suite")
-        print("Exercice 5 > Calcul de Surface")
-        print("Exercice 6 > Développement limiter")
-        print("Exercice 7 > Fibonacci")
-        print("Exercice 8 > Le nombre d’or & Fibonacci")
+        print("Exercice 1 > Suite de Syracuse")
+        print("Exercice 2 > Jeu des allumettes")
+        print("Exercice 3 > 421")
+        print("Exercice 4 > Classe Personne")
+        print("Exercice 5 > Classe Étudiant")
         print("0 > Quitter\n")
         choice = input_positive_int("Choisissez l'exercice voulu : ")
         match choice:
