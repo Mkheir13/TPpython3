@@ -54,6 +54,23 @@ def input_positive_int(txt):
     return test
 
 
+# Fonction pour choisir un entier positif entre 1 et 3
+def input_positive_int_onethree(txt):
+    test: int
+    toReturn: int
+    while True:
+        print(txt, end="")
+        number: str = input()
+        try:
+            test = int(number)
+            if test < 1 or test > 3:
+                print("Vous devez choisir un entier positif entre 1 et 3!")
+                continue
+            break
+        except ValueError:
+            print("Vous devez choisir un entier positif !")
+    return test
+
 # Fonction pour choisir un entier non nul
 def input_nonzero_int(txt):
     test: int

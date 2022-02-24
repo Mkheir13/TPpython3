@@ -1,6 +1,5 @@
 from utilitary import *
 
-
 # Algorithme qui permet de calculer et d'afficher la suite de syracus
 def exo_1():
     print("\n\n\n\n======== Exercice 1 - Suite de Syracuse ========\n")
