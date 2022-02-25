@@ -1,11 +1,14 @@
 from exos import *
 
 
+# Définition d'une class student
 class Student(Person):
+    # Fonction d'initialisation d'un étudiant, utilisant celle de la class Person
     def __init__(self, notes):
         super().__init__()
         self.notes = notes
 
+    # Fonction d'affichage des infos d'un étudiant, utilisant celle de la class Person
     def display_student(self):
         self.display()
         print(f"\n\nRésultats de {self.name} {self.surname} :\n")
@@ -17,6 +20,7 @@ class Student(Person):
         print(f"\nMoyenne générale : {round(tot, 2)}")
 
 
+# Mise en pratique de la création d'un étudiant, et de l'affichage de ses infos
 def exo_5():
     print("\n\n\n\n======== Exercice 5 - Classe Étudiant ========\n")
     p1 = Student({
