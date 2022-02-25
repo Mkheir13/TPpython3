@@ -6,6 +6,7 @@ import random
 def exo_3():
     print("\n\n\n\n======== Exercice 3 - 421 ========\n")
     nbr_game = input_nonzero_int("Combien de parties voulez vous jouer : ")
+    win = 0
     for i in range(nbr_game):
         dice = 3
         found_dice = []
@@ -24,6 +25,7 @@ def exo_3():
                 found_dice.sort(reverse=True)
                 if found_dice == [4, 2, 1]:
                     print(f"Partie {i + 1} gagnée en {j + 1} coup{'' if j == 0 else 's'}")
+                    win += 1
                     break
                 elif j == 2:
                     print(f"Partie {i + 1} perdue")
@@ -38,6 +40,7 @@ def exo_3():
                 found_dice.sort(reverse=True)
                 if found_dice == [4, 2, 1]:
                     print(f"Partie {i + 1} gagnée en {j + 1} coup{'' if j == 0 else 's'}")
+                    win += 1
                     break
                 elif j == 2:
                     print(f"Partie {i + 1} perdue")
@@ -49,10 +52,12 @@ def exo_3():
                 found_dice.sort(reverse=True)
                 if found_dice == [4, 2, 1]:
                     print(f"Partie {i + 1} gagnée en {j + 1} coup{'' if j == 0 else 's'}")
+                    win += 1
                     break
                 elif j == 2:
                     print(f"Partie {i + 1} perdue")
                 continue
+    print(f"Vous avez joué {nbr_game} parties, {win} gagnées pour {nbr_game-win} perdues, soit {round(win/nbr_game*100, 2)}% de gain")
 
 
 def dice_roll(dice_to_sub, found_dice, good_dice, kept_dice):
