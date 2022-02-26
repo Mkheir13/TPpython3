@@ -16,7 +16,7 @@ def exo_2():
         if nb_allumettes > 0:
             bol = not bol
             if bol:
-                rand = input_positive_int_onethree(f"{'|' * nb_allumettes:>{nb_espace}} {nom_joueur} enleve : ")
+                rand = input_positive_int_onethree(f"{'|' * nb_allumettes:>{nb_espace}} {nom_joueur} enleve : ") #permet d'afficher les allumettes qu'enleve le joueur
                 nb_allumettes -= rand
             else:
                 if nb_allumettes < 3:
@@ -25,7 +25,7 @@ def exo_2():
                     rand = 1
                 else:
                     rand = random.randint(1, 3)
-                print(f"{'|' * nb_allumettes:>{nb_espace}}", end=f" Ordinateur enleve : {rand} \n") 
+                print(f"{'|' * nb_allumettes:>{nb_espace}}", end=f" Ordinateur enleve : {rand} \n") #permet d'afficher les allumettes qu'enleve l'ordinateur
                 nb_allumettes -= rand
         nb_tours -= 1
     print("{} a perdu :-(".format(nom_joueur if not bol else "l\'ordinateur"))
